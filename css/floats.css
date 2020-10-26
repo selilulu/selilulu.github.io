@@ -1,0 +1,91 @@
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+*,
+*::before,*::after { box-sizing: border-box;}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align:center ;
+    border:2px solid red;
+}
+
+body{
+    background-color: rgb(236, 192, 222);
+}
+
+.sidebar {
+    padding: 0.7em;
+    border:2px solid black;
+
+}
+.main{
+    padding: 0.7em;
+    border:2px solid orange;
+    
+}
+
+.footer{
+    padding: 0.7em;
+    border:2px solid purple;
+
+}
+
+
+.sidebarleft{
+    float:left;
+    width:25%;
+
+}
+.main{
+
+    width: 50%;
+    float:left;
+}
+
+.sidebarright{
+
+    float: right;
+    width: 25%;
+}
+
+.footer{
+    clear:both;
+}
+
+h3{
+    text-align: center;
+
+}
+
+
+@media only screen and (max-width:730px) {
+
+.float{
+    background-color: rgb(16, 134, 163);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.footer,header{
+    width:100%;
+}
+
+p,h2,h4,nav{font-size:0.5rem}
+}
+
+
+img{
+
+width: 100%;
+height: auto;
+
+}
